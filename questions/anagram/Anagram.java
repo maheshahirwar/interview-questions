@@ -1,0 +1,19 @@
+package anagram;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		System.out.println("Anagram : " + new Anagram().isAnagram("RADAR", "RADAR"));
+
+	}
+
+	public boolean isAnagram(String s1, String s2) {
+		char[] ch1 = s1.toCharArray(), ch2 = s2.toCharArray();
+		Arrays.sort(ch1);
+		Arrays.sort(ch2);
+		return Arrays.equals(ch1, ch2);
+	}
+
+}
