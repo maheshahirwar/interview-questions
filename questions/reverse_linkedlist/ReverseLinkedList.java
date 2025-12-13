@@ -25,7 +25,6 @@ public class ReverseLinkedList {
 
 	private static Node reverseLinkedList(Node head) {
 		Node prev = null, curr = head;
-
 		while (curr != null) {
 			Node next = curr.next;
 			curr.next = prev;
